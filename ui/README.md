@@ -3,5 +3,5 @@
 ## Установка пакета
 
 ```
-npm i @shark/ui
+npm i @soil/ui
 ```

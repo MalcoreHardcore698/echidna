@@ -1,45 +1,30 @@
 {
-  "name": "@shark/ui",
-  "version": "1",
+  "name": "@soil/ui",
+  "version": "1.0.0",
   "keywords": [
-    "shark-ui",
+    "soil-ui",
     "design-system",
     "atomic",
     "genesis"
   ],
-  "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
+  "author": "Daniil Popov | MalcoreHardcore698 <dan8271@yandex.ru>",
+  "license": "MIT",
   "scripts": {
-    "eject": "react-scripts eject",
-    "start": "start-storybook -p 6006 -s public",
-    "storybook:build": "build-storybook -s public -o build/storybook",
-    "tsc-dry-run": "tsc --noEmit",
-    "lint": "eslint --ext .js,.jsx,.tsx,.ts --fix . --quiet",
-    "format:svg": "prettier --write '**/*.svg' --parser html",
-    "pre-push": "yarn run tsc-dry-run",
-    "pre-commit": "yarn run lint-staged",
-    "build": "rm -rf dist && node builder/build.js --config=./build.config.js",
-    "pre-build": "node builder/preBuild.js --config=./build.config.js",
-    "test": "yarn lint && yarn tsc-dry-run && yarn unit",
-    "unit": "jest",
-    "unit:watch": "jest --watch"
+    "start": "start-storybook -p 6006 --no-dll",
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js --ignore-path .gitignore .",
+    "prettier": "prettier --write .",
+    "storybook:build": "build-storybook -c .storybook",
+    "build-storybook": "build-storybook --no-dll"
   },
   "browserslist": [
     "last 2 version",
     "> 1%",
     "not ie 11"
   ],
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "yarn run pre-commit",
-      "pre-push": "yarn run pre-push"
-    }
+  "repository": {
+    "type": "git",
+    "utl": "git+https://github.com/MalcoreHardcore698/soil.git"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -154,5 +139,6 @@
     "rimraf": "^3.0.2",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1"
-  }
+  },
+  "homepage": "https://github.com/MalcoreHardcore698/soil"
 }
