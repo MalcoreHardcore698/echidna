@@ -1,0 +1,25 @@
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import Column from '../Column'
+import Notice from '.'
+import AvatarIMG from '../../../assets/images/avatar.png'
+
+storiesOf('Components API/Data Display/Notice', module).add('Default', () => {
+  return (
+    <Column style={{ width: 525 }}>
+      <Notice
+        img={AvatarIMG}
+        title={'Владислав'}
+        message={'Прокомментировал(а) ваш проект'}
+        date={'12.12.2020'}
+      />
+
+      <Notice
+        icon={'infoCircle'}
+        title={'Система'}
+        message={'Добро пожаловать!'}
+        date={'12.12.2020'}
+      />
+    </Column>
+  )
+})
