@@ -3,5 +3,5 @@
 ## Установка пакета
 
 ```
-npm i @soil/ui
+npm i @echidna/ui
 ```
