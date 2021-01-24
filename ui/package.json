@@ -1,8 +1,8 @@
 {
-  "name": "@soil/ui",
+  "name": "@echidna/ui",
   "version": "1.0.0",
   "keywords": [
-    "soil-ui",
+    "echidna-ui",
     "design-system",
     "atomic",
     "genesis"
@@ -140,5 +140,5 @@
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1"
   },
-  "homepage": "https://github.com/MalcoreHardcore698/soil"
+  "homepage": "https://github.com/MalcoreHardcore698/echidna"
 }
