@@ -1,6 +1,6 @@
 {
   "name": "@echidna/ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "echidna-ui",
     "design-system",
@@ -140,7 +140,14 @@
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1"
   },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "homepage": "https://github.com/MalcoreHardcore698/echidna",
-  "description": "## Установка пакета",
-  "main": ".eslintrc.js"
+  "description": "Echidna - design system for Atomic and Genesis",
+  "main": "index.js"
 }
